@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@mrgb/ui-shared": ["libs/ui/shared/src/index.ts"],
+      "@mrgb/ui-shared/*": ["libs/ui/shared/src/*"]
+    }
+  }
+}

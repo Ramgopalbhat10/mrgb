@@ -1,0 +1,31 @@
+{
+  "name": "ui-shared",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/shared/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/ui/shared",
+        "main": "libs/ui/shared/src/index.ts",
+        "tsConfig": "libs/ui/shared/tsconfig.lib.json",
+        "assets": [],
+        "generatePackageJson": true,
+        "format": ["cjs"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui/shared/**/*.ts",
+          "libs/ui/shared/package.json"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

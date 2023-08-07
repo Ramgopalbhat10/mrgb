@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@mrgb/ui-shared": ["libs/ui/shared/src/index.ts"],
+      "@mrgb/ui-shared/*": ["libs/ui/shared/src/*"],
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
